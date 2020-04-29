@@ -8,11 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HomeViewController: UIViewController {
+    @IBAction func nextViewButtonPressed(_ sender: Any)
+    {
+        self.performSegue(withIdentifier: "SecondViewSegue", sender: self)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
 
