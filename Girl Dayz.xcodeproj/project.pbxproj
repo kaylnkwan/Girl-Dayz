@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C340749B245205730019BD29 /* TruthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340749A245205730019BD29 /* TruthScreenViewController.swift */; };
 		C3DADFC1244F48E9002354E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DADFC0244F48E9002354E0 /* AppDelegate.swift */; };
 		C3DADFC3244F48E9002354E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DADFC2244F48E9002354E0 /* SceneDelegate.swift */; };
-		C3DADFC5244F48E9002354E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DADFC4244F48E9002354E0 /* ViewController.swift */; };
+		C3DADFC5244F48E9002354E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DADFC4244F48E9002354E0 /* HomeViewController.swift */; };
 		C3DADFC8244F48E9002354E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DADFC6244F48E9002354E0 /* Main.storyboard */; };
 		C3DADFCA244F48EA002354E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DADFC9244F48EA002354E0 /* Assets.xcassets */; };
 		C3DADFCD244F48EA002354E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DADFCB244F48EA002354E0 /* LaunchScreen.storyboard */; };
 		C3DADFD8244F48EB002354E0 /* Girl_DayzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DADFD7244F48EB002354E0 /* Girl_DayzTests.swift */; };
 		C3DADFE3244F48EB002354E0 /* Girl_DayzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DADFE2244F48EB002354E0 /* Girl_DayzUITests.swift */; };
+		C3DADFF1244F569E002354E0 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DADFF0244F569E002354E0 /* SecondScreenViewController.swift */; };
+		C3DADFF3244F6CF2002354E0 /* DareScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DADFF2244F6CF2002354E0 /* DareScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C340749A245205730019BD29 /* TruthScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthScreenViewController.swift; sourceTree = "<group>"; };
 		C3DADFBD244F48E9002354E0 /* Girl Dayz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Girl Dayz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DADFC0244F48E9002354E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3DADFC2244F48E9002354E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3DADFC4244F48E9002354E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3DADFC4244F48E9002354E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C3DADFC7244F48E9002354E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3DADFC9244F48EA002354E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3DADFCC244F48EA002354E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		C3DADFDE244F48EB002354E0 /* Girl DayzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Girl DayzUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DADFE2244F48EB002354E0 /* Girl_DayzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Girl_DayzUITests.swift; sourceTree = "<group>"; };
 		C3DADFE4244F48EB002354E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DADFF0244F569E002354E0 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		C3DADFF2244F6CF2002354E0 /* DareScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 			children = (
 				C3DADFC0244F48E9002354E0 /* AppDelegate.swift */,
 				C3DADFC2244F48E9002354E0 /* SceneDelegate.swift */,
-				C3DADFC4244F48E9002354E0 /* ViewController.swift */,
+				C3DADFC4244F48E9002354E0 /* HomeViewController.swift */,
+				C3DADFF0244F569E002354E0 /* SecondScreenViewController.swift */,
+				C3DADFF2244F6CF2002354E0 /* DareScreenViewController.swift */,
+				C340749A245205730019BD29 /* TruthScreenViewController.swift */,
 				C3DADFC6244F48E9002354E0 /* Main.storyboard */,
 				C3DADFC9244F48EA002354E0 /* Assets.xcassets */,
 				C3DADFCB244F48EA002354E0 /* LaunchScreen.storyboard */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3DADFC5244F48E9002354E0 /* ViewController.swift in Sources */,
+				C340749B245205730019BD29 /* TruthScreenViewController.swift in Sources */,
+				C3DADFF3244F6CF2002354E0 /* DareScreenViewController.swift in Sources */,
+				C3DADFF1244F569E002354E0 /* SecondScreenViewController.swift in Sources */,
+				C3DADFC5244F48E9002354E0 /* HomeViewController.swift in Sources */,
 				C3DADFC1244F48E9002354E0 /* AppDelegate.swift in Sources */,
 				C3DADFC3244F48E9002354E0 /* SceneDelegate.swift in Sources */,
 			);
