@@ -1,0 +1,37 @@
+//
+//  TruthScreenViewController.swift
+//  Girl Dayz
+//
+//  Created by KKwan on 2020-04-21.
+//  Copyright © 2020 GirlDayz. All rights reserved.
+//
+
+import UIKit
+
+class DareScreenViewController: UIViewController {
+    @IBOutlet weak var selectionLbl: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBAction func pickAgainButtonPressed(_ sender: Any) {
+    
+        print("pick again button pressed")
+        self.performSegue(withIdentifier: "PickAgainSegue", sender: self)
+        
+        let clickResults = arc4random_uniform(14)+1
+        selectionLbl.text = "\(clickResults)"
+        imageView.image = UIImage(named: "\(clickResults)")
+            
+    
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+
+        
+    }
+
+
+}
+
+
