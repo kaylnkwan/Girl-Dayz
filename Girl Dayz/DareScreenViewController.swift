@@ -20,7 +20,7 @@ class DareScreenViewController: UIViewController {
         let clickResults = arc4random_uniform(14)+1
         selectionLbl.text = "\(clickResults)"
         imageView.image = UIImage(named: "\(clickResults)")
-            
+            //test commit message
     
     }
     
