@@ -10,12 +10,6 @@ import UIKit
 
 class TruthScreenViewController: UIViewController {
     
-    @IBAction func BackButtonPressed(_ sender: Any) {
-        print("back button pressed")
-        self.performSegue(withIdentifier: "HomeSegue", sender: self)
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

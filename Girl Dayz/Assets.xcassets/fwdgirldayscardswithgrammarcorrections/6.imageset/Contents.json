@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "Dare_Card_6.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Dare_Card_6.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

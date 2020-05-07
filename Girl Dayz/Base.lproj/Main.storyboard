@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,8 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title_Page_()" translatesAutoresizingMaskIntoConstraints="NO" id="HO2-th-LGQ">
+                                <rect key="frame" x="0.0" y="105" width="414" height="679"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaP-Kn-mIV">
-                                <rect key="frame" x="0.0" y="760" width="414" height="136"/>
+                                <rect key="frame" x="0.0" y="780" width="414" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <state key="normal" title="Click here to begin!" backgroundImage="background">
@@ -27,11 +31,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dNm-Yx-OT4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title_Page_()" translatesAutoresizingMaskIntoConstraints="NO" id="HO2-th-LGQ">
-                                <rect key="frame" x="0.0" y="89" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -44,49 +44,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8991" y="633"/>
+            <point key="canvasLocation" x="-8998.5507246376819" y="628.125"/>
         </scene>
         <!--Second Screen View Controller-->
         <scene sceneID="SkF-2E-tMx">
             <objects>
-                <viewController storyboardIdentifier="SecondScreenViewController" id="eXO-kn-xQf" customClass="SecondScreenViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondScreenViewController" modalPresentationStyle="overCurrentContext" id="eXO-kn-xQf" customClass="SecondScreenViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OCS-I2-qna">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ8-nx-59f">
-                                <rect key="frame" x="0.0" y="421" width="414" height="421"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEk-9b-Pqe" userLabel="TruthCard">
+                                <rect key="frame" x="0.0" y="460" width="414" height="416"/>
                                 <state key="normal" title="Button" image="Truth_Card_Back"/>
                                 <connections>
-                                    <action selector="truthViewButtonPressed:" destination="eXO-kn-xQf" eventType="touchUpInside" id="jLq-8x-FgD"/>
+                                    <action selector="truthViewButtonPressed:" destination="eXO-kn-xQf" eventType="touchUpInside" id="Qkv-Iq-JrE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0h-Qd-i8T">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="421"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AQ-63-J1N" userLabel="DareCard">
+                                <rect key="frame" x="0.0" y="44" width="414" height="416"/>
                                 <state key="normal" title="Button" image="Dare_Card_Back"/>
                                 <connections>
-                                    <action selector="dareViewButtonPressed:" destination="eXO-kn-xQf" eventType="touchUpInside" id="d3R-fi-Bw8"/>
+                                    <action selector="dareViewButtonPressed:" destination="eXO-kn-xQf" eventType="touchUpInside" id="C6Y-4b-OgE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="top" secondItem="5AQ-63-J1N" secondAttribute="bottom" id="4V8-Ay-6sN"/>
+                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="4mU-Vu-KTe"/>
+                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="top" secondItem="5AQ-63-J1N" secondAttribute="bottom" id="7YR-Ow-ME1"/>
+                            <constraint firstItem="5AQ-63-J1N" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="M9a-6c-j34"/>
+                            <constraint firstItem="5AQ-63-J1N" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="PlE-PF-uIr"/>
+                            <constraint firstAttribute="bottom" secondItem="BEk-9b-Pqe" secondAttribute="bottom" id="W4M-6T-viH"/>
+                            <constraint firstItem="5AQ-63-J1N" firstAttribute="top" secondItem="ODq-eQ-Pa7" secondAttribute="top" id="mXr-FY-EBt"/>
+                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="zaj-Z0-fAw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ODq-eQ-Pa7"/>
                     </view>
                     <connections>
-                        <segue destination="ISn-CI-quW" kind="showDetail" identifier="optionViewSegue" id="goL-0h-lRH"/>
+                        <segue destination="ISn-CI-quW" kind="showDetail" identifier="DareViewSegue" id="goL-0h-lRH"/>
                         <segue destination="RUx-vM-Yts" kind="showDetail" identifier="TruthViewSegue" id="9q7-E5-t6N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzJ-Rs-E8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8197.1014492753638" y="632.8125"/>
+            <point key="canvasLocation" x="-8198.5507246376819" y="632.14285714285711"/>
         </scene>
         <!--Truth Screen View Controller-->
         <scene sceneID="tKB-bs-S2c">
             <objects>
-                <viewController storyboardIdentifier="TruthScreenViewController" id="RUx-vM-Yts" customClass="TruthScreenViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TruthScreenViewController" modalPresentationStyle="overCurrentContext" id="RUx-vM-Yts" customClass="TruthScreenViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tLz-YT-da0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +107,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="BackButtonPressed:" destination="RUx-vM-Yts" eventType="touchUpInside" id="JEG-bm-dUg"/>
+                                    <segue destination="8CT-8Y-FXI" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="ruM-ck-s9K"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="15" translatesAutoresizingMaskIntoConstraints="NO" id="F3K-rc-gjC">
@@ -114,18 +122,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="AA5-oV-b2j"/>
                     </view>
-                    <connections>
-                        <segue destination="eXO-kn-xQf" kind="showDetail" identifier="HomeSegue" id="KKd-Da-hrj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQZ-5j-n1T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8CT-8Y-FXI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-7449.275362318841" y="1019.8660714285713"/>
+            <point key="canvasLocation" x="-7449" y="1021"/>
         </scene>
         <!--Dare Screen View Controller-->
         <scene sceneID="Q1h-4U-g8c">
             <objects>
-                <viewController storyboardIdentifier="DareScreenViewController" id="ISn-CI-quW" customClass="DareScreenViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaV-BB-dgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Npc-Yr-Bds" userLabel="Exit" sceneMemberID="exit"/>
+                <viewController storyboardIdentifier="DareScreenViewController" modalPresentationStyle="overCurrentContext" id="ISn-CI-quW" customClass="DareScreenViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QF7-qK-vp4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +150,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="pickAgainButtonPressed:" destination="ISn-CI-quW" eventType="touchUpInside" id="1tZ-qO-bS5"/>
+                                    <segue destination="Npc-Yr-Bds" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="6xc-lL-rL7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ce-mI-HQG">
@@ -163,23 +171,18 @@
                     <connections>
                         <outlet property="imageView" destination="tyE-Ke-dJ2" id="PTa-eK-Vio"/>
                         <outlet property="selectionLbl" destination="1ce-mI-HQG" id="haN-MU-IZ1"/>
-                        <segue destination="eXO-kn-xQf" kind="showDetail" identifier="PickAgainSegue" id="DV7-TG-DeB"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TaV-BB-dgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-7449.275362318841" y="309.375"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="KKd-Da-hrj"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <image name="1" width="654" height="832"/>
-        <image name="15" width="654" height="832"/>
-        <image name="Dare_Card_Back" width="654" height="832"/>
-        <image name="Title_Page_()" width="654" height="832"/>
-        <image name="Truth_Card_Back" width="654" height="832"/>
-        <image name="background" width="736" height="1309"/>
+        <image name="1" width="327" height="416"/>
+        <image name="15" width="327" height="416"/>
+        <image name="Dare_Card_Back" width="327" height="416"/>
+        <image name="Title_Page_()" width="327" height="416"/>
+        <image name="Truth_Card_Back" width="327" height="416"/>
+        <image name="background" width="368" height="654.5"/>
     </resources>
 </document>

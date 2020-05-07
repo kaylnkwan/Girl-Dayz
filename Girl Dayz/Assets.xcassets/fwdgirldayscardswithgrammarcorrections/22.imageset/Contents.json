@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "Truth_Card_8.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Truth_Card_8.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
