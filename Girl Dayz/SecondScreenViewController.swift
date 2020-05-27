@@ -30,4 +30,8 @@ class SecondScreenViewController: UIViewController {
         print("unwind action fired")
         
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
 }

@@ -20,6 +20,10 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
 
 
 }

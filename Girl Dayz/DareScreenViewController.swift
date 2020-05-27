@@ -9,7 +9,6 @@
 import UIKit
 
 class DareScreenViewController: UIViewController {
-    @IBOutlet weak var selectionLbl: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
 //    @IBAction func pickAgainButtonPressed(_ sender: Any) {
@@ -27,8 +26,12 @@ class DareScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
-        
+                let clickResults = arc4random_uniform(14)+1
+                imageView.image = UIImage(named: "\(clickResults)")
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
     }
 
 

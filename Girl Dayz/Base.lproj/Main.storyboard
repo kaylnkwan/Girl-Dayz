@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,7 +12,7 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title_Page_()" translatesAutoresizingMaskIntoConstraints="NO" id="HO2-th-LGQ">
@@ -51,19 +51,22 @@
             <objects>
                 <viewController storyboardIdentifier="SecondScreenViewController" modalPresentationStyle="overCurrentContext" id="eXO-kn-xQf" customClass="SecondScreenViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OCS-I2-qna">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="XXj-5c-dDo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEk-9b-Pqe" userLabel="TruthCard">
-                                <rect key="frame" x="0.0" y="460" width="414" height="416"/>
-                                <state key="normal" title="Button" image="Truth_Card_Back"/>
+                                <rect key="frame" x="0.0" y="443" width="375" height="433"/>
+                                <state key="normal" title="Button" image="2xTruthCard0"/>
                                 <connections>
                                     <action selector="truthViewButtonPressed:" destination="eXO-kn-xQf" eventType="touchUpInside" id="Qkv-Iq-JrE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AQ-63-J1N" userLabel="DareCard">
-                                <rect key="frame" x="0.0" y="44" width="414" height="416"/>
-                                <state key="normal" title="Button" image="Dare_Card_Back"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="416"/>
+                                <state key="normal" title="Button" image="2xDareCard0"/>
                                 <connections>
                                     <action selector="dareViewButtonPressed:" destination="eXO-kn-xQf" eventType="touchUpInside" id="C6Y-4b-OgE"/>
                                 </connections>
@@ -74,11 +77,15 @@
                             <constraint firstItem="BEk-9b-Pqe" firstAttribute="top" secondItem="5AQ-63-J1N" secondAttribute="bottom" id="4V8-Ay-6sN"/>
                             <constraint firstItem="BEk-9b-Pqe" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="4mU-Vu-KTe"/>
                             <constraint firstItem="BEk-9b-Pqe" firstAttribute="top" secondItem="5AQ-63-J1N" secondAttribute="bottom" id="7YR-Ow-ME1"/>
+                            <constraint firstItem="XXj-5c-dDo" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="FaN-I3-UC0"/>
                             <constraint firstItem="5AQ-63-J1N" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="M9a-6c-j34"/>
                             <constraint firstItem="5AQ-63-J1N" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="PlE-PF-uIr"/>
                             <constraint firstAttribute="bottom" secondItem="BEk-9b-Pqe" secondAttribute="bottom" id="W4M-6T-viH"/>
                             <constraint firstItem="5AQ-63-J1N" firstAttribute="top" secondItem="ODq-eQ-Pa7" secondAttribute="top" id="mXr-FY-EBt"/>
+                            <constraint firstItem="XXj-5c-dDo" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="yW2-vW-MAV"/>
+                            <constraint firstAttribute="bottom" secondItem="XXj-5c-dDo" secondAttribute="bottom" id="zLd-D1-M2T"/>
                             <constraint firstItem="BEk-9b-Pqe" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="zaj-Z0-fAw"/>
+                            <constraint firstItem="XXj-5c-dDo" firstAttribute="top" secondItem="OCS-I2-qna" secondAttribute="top" id="zya-sk-XKG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ODq-eQ-Pa7"/>
                     </view>
@@ -96,7 +103,7 @@
             <objects>
                 <viewController storyboardIdentifier="TruthScreenViewController" modalPresentationStyle="overCurrentContext" id="RUx-vM-Yts" customClass="TruthScreenViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tLz-YT-da0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gO-mK-qIF">
@@ -131,11 +138,9 @@
         <!--Dare Screen View Controller-->
         <scene sceneID="Q1h-4U-g8c">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TaV-BB-dgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Npc-Yr-Bds" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController storyboardIdentifier="DareScreenViewController" modalPresentationStyle="overCurrentContext" id="ISn-CI-quW" customClass="DareScreenViewController" customModule="Girl_Dayz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QF7-qK-vp4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BHs-xa-4Yl">
@@ -153,13 +158,6 @@
                                     <segue destination="Npc-Yr-Bds" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="6xc-lL-rL7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ce-mI-HQG">
-                                <rect key="frame" x="306" y="10" width="88" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="tyE-Ke-dJ2">
                                 <rect key="frame" x="0.0" y="58" width="414" height="679"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -170,9 +168,10 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="tyE-Ke-dJ2" id="PTa-eK-Vio"/>
-                        <outlet property="selectionLbl" destination="1ce-mI-HQG" id="haN-MU-IZ1"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaV-BB-dgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Npc-Yr-Bds" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-7449.275362318841" y="309.375"/>
         </scene>
@@ -180,9 +179,9 @@
     <resources>
         <image name="1" width="327" height="416"/>
         <image name="15" width="327" height="416"/>
-        <image name="Dare_Card_Back" width="327" height="416"/>
+        <image name="2xDareCard0" width="276" height="272.66665649414062"/>
+        <image name="2xTruthCard0" width="276" height="272.66665649414062"/>
         <image name="Title_Page_()" width="327" height="416"/>
-        <image name="Truth_Card_Back" width="327" height="416"/>
         <image name="background" width="368" height="654.5"/>
     </resources>
 </document>
