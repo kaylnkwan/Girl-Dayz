@@ -15,13 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title_Page_()" translatesAutoresizingMaskIntoConstraints="NO" id="HO2-th-LGQ">
-                                <rect key="frame" x="0.0" y="105" width="414" height="679"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaP-Kn-mIV">
-                                <rect key="frame" x="0.0" y="780" width="414" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaP-Kn-mIV">
+                                <rect key="frame" x="0.0" y="629" width="375" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="lHh-xe-6oY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <state key="normal" title="Click here to begin!" backgroundImage="background">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -30,12 +28,22 @@
                                     <action selector="nextViewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCf-hk-0WQ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dNm-Yx-OT4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title_Page_()" translatesAutoresizingMaskIntoConstraints="NO" id="HO2-th-LGQ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="585"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HO2-th-LGQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AKX-pZ-erL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YaP-Kn-mIV" secondAttribute="bottom" id="EDx-hy-Th4"/>
+                            <constraint firstItem="YaP-Kn-mIV" firstAttribute="top" secondItem="HO2-th-LGQ" secondAttribute="bottom" id="JME-1J-hHg"/>
+                            <constraint firstItem="YaP-Kn-mIV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SwX-Vd-0Hy"/>
+                            <constraint firstItem="YaP-Kn-mIV" firstAttribute="top" secondItem="HO2-th-LGQ" secondAttribute="bottom" id="UIX-v3-bgg"/>
+                            <constraint firstItem="HO2-th-LGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bD0-JU-h0K"/>
+                            <constraint firstItem="HO2-th-LGQ" firstAttribute="trailing" secondItem="YaP-Kn-mIV" secondAttribute="trailing" id="bhv-gL-1tn"/>
+                            <constraint firstItem="YaP-Kn-mIV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mjd-2d-YD3"/>
+                            <constraint firstItem="HO2-th-LGQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rID-RD-V85"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -44,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8998.5507246376819" y="628.125"/>
+            <point key="canvasLocation" x="-8999.2000000000007" y="627.4362818590705"/>
         </scene>
         <!--Second Screen View Controller-->
         <scene sceneID="SkF-2E-tMx">
@@ -54,38 +62,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="XXj-5c-dDo">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEk-9b-Pqe" userLabel="TruthCard">
-                                <rect key="frame" x="0.0" y="443" width="375" height="433"/>
-                                <state key="normal" title="Button" image="2xTruthCard0"/>
-                                <connections>
-                                    <action selector="truthViewButtonPressed:" destination="eXO-kn-xQf" eventType="touchUpInside" id="Qkv-Iq-JrE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AQ-63-J1N" userLabel="DareCard">
-                                <rect key="frame" x="0.0" y="44" width="375" height="416"/>
-                                <state key="normal" title="Button" image="2xDareCard0"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AQ-63-J1N" userLabel="DareCard">
+                                <rect key="frame" x="0.0" y="44" width="375" height="367"/>
+                                <state key="normal" image="DareCard0"/>
                                 <connections>
                                     <action selector="dareViewButtonPressed:" destination="eXO-kn-xQf" eventType="touchUpInside" id="C6Y-4b-OgE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="25" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEk-9b-Pqe" userLabel="TruthCard">
+                                <rect key="frame" x="0.0" y="411" width="375" height="367"/>
+                                <state key="normal" image="TruthCard0"/>
+                                <connections>
+                                    <action selector="truthViewButtonPressed:" destination="eXO-kn-xQf" eventType="touchUpInside" id="Qkv-Iq-JrE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="top" secondItem="5AQ-63-J1N" secondAttribute="bottom" id="4V8-Ay-6sN"/>
-                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="4mU-Vu-KTe"/>
-                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="top" secondItem="5AQ-63-J1N" secondAttribute="bottom" id="7YR-Ow-ME1"/>
-                            <constraint firstItem="XXj-5c-dDo" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="FaN-I3-UC0"/>
-                            <constraint firstItem="5AQ-63-J1N" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="M9a-6c-j34"/>
-                            <constraint firstItem="5AQ-63-J1N" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="PlE-PF-uIr"/>
-                            <constraint firstAttribute="bottom" secondItem="BEk-9b-Pqe" secondAttribute="bottom" id="W4M-6T-viH"/>
-                            <constraint firstItem="5AQ-63-J1N" firstAttribute="top" secondItem="ODq-eQ-Pa7" secondAttribute="top" id="mXr-FY-EBt"/>
-                            <constraint firstItem="XXj-5c-dDo" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="yW2-vW-MAV"/>
-                            <constraint firstAttribute="bottom" secondItem="XXj-5c-dDo" secondAttribute="bottom" id="zLd-D1-M2T"/>
-                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="zaj-Z0-fAw"/>
-                            <constraint firstItem="XXj-5c-dDo" firstAttribute="top" secondItem="OCS-I2-qna" secondAttribute="top" id="zya-sk-XKG"/>
+                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="height" secondItem="5AQ-63-J1N" secondAttribute="height" id="1UK-oF-Kjt"/>
+                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="8EY-3x-VJC"/>
+                            <constraint firstItem="5AQ-63-J1N" firstAttribute="top" secondItem="ODq-eQ-Pa7" secondAttribute="top" id="G0e-bs-bjh"/>
+                            <constraint firstItem="5AQ-63-J1N" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="IQb-K4-rzx"/>
+                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="top" secondItem="5AQ-63-J1N" secondAttribute="bottom" id="RZt-Rf-HoN"/>
+                            <constraint firstItem="5AQ-63-J1N" firstAttribute="trailing" secondItem="ODq-eQ-Pa7" secondAttribute="trailing" id="bkB-7M-bfH"/>
+                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="leading" secondItem="ODq-eQ-Pa7" secondAttribute="leading" id="cmL-tX-RDf"/>
+                            <constraint firstItem="ODq-eQ-Pa7" firstAttribute="bottom" secondItem="BEk-9b-Pqe" secondAttribute="bottom" id="hoq-gq-RG9"/>
+                            <constraint firstItem="BEk-9b-Pqe" firstAttribute="top" secondItem="5AQ-63-J1N" secondAttribute="bottom" id="s4R-4E-q7W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ODq-eQ-Pa7"/>
                     </view>
@@ -96,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzJ-Rs-E8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8198.5507246376819" y="632.14285714285711"/>
+            <point key="canvasLocation" x="-8202.3999999999996" y="629.55665024630548"/>
         </scene>
         <!--Truth Screen View Controller-->
         <scene sceneID="tKB-bs-S2c">
@@ -179,9 +181,9 @@
     <resources>
         <image name="1" width="327" height="416"/>
         <image name="15" width="327" height="416"/>
-        <image name="2xDareCard0" width="276" height="272.66665649414062"/>
-        <image name="2xTruthCard0" width="276" height="272.66665649414062"/>
+        <image name="DareCard0" width="414" height="409"/>
         <image name="Title_Page_()" width="327" height="416"/>
+        <image name="TruthCard0" width="414" height="409"/>
         <image name="background" width="368" height="654.5"/>
     </resources>
 </document>

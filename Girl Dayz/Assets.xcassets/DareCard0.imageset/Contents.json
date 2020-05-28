@@ -1,16 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "DareCard0.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "DareCard0.jpg",
+      "filename" : "BigDareCard0.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "2xDareCard0.jpg",
+      "filename" : "BiggestDareCard0-1.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
